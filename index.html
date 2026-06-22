@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jun 23 — Dinner Attendees</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f5;
+      color: #111;
+      padding: 40px 24px;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #111;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 32px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 12px;
+    }
+
+    a.card {
+      display: block;
+      background: #fff;
+      border-radius: 12px;
+      padding: 18px 20px;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid #e8e8e8;
+      transition: box-shadow 0.15s, transform 0.15s;
+      cursor: pointer;
+    }
+
+    a.card:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+      transform: translateY(-2px);
+    }
+
+    .name {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #111;
+    }
+
+    .role {
+      font-size: 13px;
+      color: #444;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+
+    .company {
+      font-size: 12px;
+      color: #888;
+      font-weight: 500;
+    }
+
+    .li-icon {
+      float: right;
+      margin-left: 8px;
+      opacity: 0.25;
+      transition: opacity 0.15s;
+    }
+
+    a.card:hover .li-icon {
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Jun 23 — Dinner Attendees</h1>
+  <p class="subtitle">Click any card to open their LinkedIn profile.</p>
+
+  <div class="grid">
+
+    <a class="card" href="https://www.linkedin.com/in/joel-lewenstein/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Joel Lewenstein</div>
+      <div class="role">Head of Design</div>
+      <div class="company">Anthropic</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/charliesutton/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Charlie Sutton</div>
+      <div class="role">CDO</div>
+      <div class="company">Atlassian</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/dhoang2/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">David Hoang</div>
+      <div class="role">VP, Head of Design, Rovo &amp; AI and Ecosystem</div>
+      <div class="company">Atlassian</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/grace-kraus-88902929" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Grace Kraus</div>
+      <div class="role">VP, Head of Design, Data and Revenue</div>
+      <div class="company">Atlassian</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/ianspalter/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Ian Spalter</div>
+      <div class="role">Head of Design</div>
+      <div class="company">Atlassian</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/findjiw/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Jian Wei</div>
+      <div class="role">Sr. Design Manager</div>
+      <div class="company">Atlassian</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/bbaxley/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Bob Baxley</div>
+      <div class="role">Designer, Writer, Advisor</div>
+      <div class="company">Independent (formerly ThoughtSpot)</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/tinachensf/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Tina Chen</div>
+      <div class="role">Design Director - AI Products</div>
+      <div class="company">Dropbox</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/ericadeahl/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Erica Deahl</div>
+      <div class="role">Sr. Design Director</div>
+      <div class="company">Webflow</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/maylikhoe/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">May-Li Khoe</div>
+      <div class="role">Co-Founder</div>
+      <div class="company">Sprout</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/leslie-yang-design/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Leslie Yang</div>
+      <div class="role">Head of Design, Core Systems and Platforms</div>
+      <div class="company">Lyft</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/siminlee/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">SI Min Lee</div>
+      <div class="role">Staff Product Designer</div>
+      <div class="company">Anthropic</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/pablostanley1/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Pablo Stanley</div>
+      <div class="role">Staff Product Designer</div>
+      <div class="company">Vercel</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/jasonchan/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Jason Chan</div>
+      <div class="role">Head of Design</div>
+      <div class="company">Quora</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/lindadong/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Linda Dong</div>
+      <div class="role">Design</div>
+      <div class="company">Apple</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/benjaminwilkins/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Benjamin Wilkins</div>
+      <div class="role">Design Lead</div>
+      <div class="company">Meta Super Intelligence Labs</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/rebeccarabison/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Rebecca Rabison</div>
+      <div class="role">Senior Director, Product Design</div>
+      <div class="company">Checkr</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/brentloosli/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Brent Loosli</div>
+      <div class="role">Principal Designer</div>
+      <div class="company">Airbnb</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/christophetauziet/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Christophe Tauziet</div>
+      <div class="role">Head of Design</div>
+      <div class="company">Plaid</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/mistern/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Mike Stern</div>
+      <div class="role">Sr. Manager, Design Evangelism</div>
+      <div class="company">Apple</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/justahl/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Justin Stahl</div>
+      <div class="role">Director of Product Design</div>
+      <div class="company">Meta</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/kirstyewing/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Kirsty Ewing</div>
+      <div class="role">Director of User Experience, AI Generation Engine</div>
+      <div class="company">SandboxAQ</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/christianervin/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Christian Ervin</div>
+      <div class="role">Head of Design</div>
+      <div class="company">Glean</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/malayvasa/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Malay Vasa</div>
+      <div class="role">Head of Design</div>
+      <div class="company">Composio</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/shetachatterjee/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Sheta Chatterjee</div>
+      <div class="role">Head of Design, Cloud AI</div>
+      <div class="company">Google</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/evelyn-kim-9b233721/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Evelyn Kim</div>
+      <div class="role">Head of Product Design</div>
+      <div class="company">Snowflake</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/hellokaymee/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Cammy Lin</div>
+      <div class="role">Sr. Design Manager</div>
+      <div class="company">Everlaw</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/aherasimchuk/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Alexa Stahl</div>
+      <div class="role">Sr. Product Designer</div>
+      <div class="company">Zendesk</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/hannah-hearth-771a0a22/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Hannah Hearth</div>
+      <div class="role">Head of Product Design</div>
+      <div class="company">Vercel</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/julie-zhuo/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Julie Zhuo</div>
+      <div class="role">Founder, ex-VP Design Meta</div>
+      <div class="company">Sundial</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/collinwhitehead/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Collin Whitehead</div>
+      <div class="role">VP of Design</div>
+      <div class="company">Superhuman</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/jaime-mariko-mcfarland-32780b44/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Jaime Mariko McFarland</div>
+      <div class="role">VP, Head of Design</div>
+      <div class="company">Airtable</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/kyleturman/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Kyle Turman</div>
+      <div class="role">Design Leadership</div>
+      <div class="company">Anthropic</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/chelsealarsson/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Chelsea Larsson</div>
+      <div class="role">Head of Content Design</div>
+      <div class="company">Anthropic</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/jlyxu/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Julie Xu</div>
+      <div class="role">Staff Product Designer</div>
+      <div class="company">Kraken</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/meaghanchoi/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Meaghan Choi</div>
+      <div class="role">Design Manager</div>
+      <div class="company">Anthropic</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/wattenberger/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Amelia Wattenberger</div>
+      <div class="role">Partner AI &amp; UX Innovation</div>
+      <div class="company">Sutter Hill Ventures</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/nickfostermb/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Nick Foster</div>
+      <div class="role">Frmr Head of Design</div>
+      <div class="company">Google X</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/lianadumitru/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Liana Dumitru</div>
+      <div class="role">Director of Design</div>
+      <div class="company">Mercury</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/francoisbach/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Frank Bach</div>
+      <div class="role">Designer</div>
+      <div class="company">Anthropic</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/jeffmatthewsmith/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Jeff Smith</div>
+      <div class="role">Founder</div>
+      <div class="company">Fieldwork Software</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/jvcalifa/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Joel Califa</div>
+      <div class="role">VP Design</div>
+      <div class="company">Unify</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/petergyang/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Peter Yang</div>
+      <div class="role">Principal Product Manager</div>
+      <div class="company">Roblox</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/dabneydonigan/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Dabney Donigan</div>
+      <div class="role">Director, Product Design</div>
+      <div class="company">Discord</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/blackduke/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Tin Kadoić</div>
+      <div class="role">Head of dOS</div>
+      <div class="company">OpenAI</div>
+    </a>
+
+    <a class="card" href="https://www.linkedin.com/in/libbyvarcoe/" target="_blank" rel="noopener">
+      <svg class="li-icon" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+      <div class="name">Libby Varcoe</div>
+      <div class="role">Head of Content</div>
+      <div class="company">Atlassian</div>
+    </a>
+
+  </div>
+</body>
+</html>
